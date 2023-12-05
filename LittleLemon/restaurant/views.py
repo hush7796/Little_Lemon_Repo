@@ -1,6 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User 
 from . import models, serializers
-from rest_framework import generics, viewsets
+from rest_framework import generics, viewsets, permissions
 
 # Create your views here.
 def index(request):
